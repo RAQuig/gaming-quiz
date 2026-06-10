@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Trivia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- SCREEN1 : START SCREEN -->
+         <div id="start-screen" class="screen">
+            <h1>"🎮 Ultimate Gaming Quiz</h1>
+            <p>Test your knowledge of the gaming world!</p>
+            <button id="start-btn">Start Quiz</button>
+         </div>
+
+         <!-- SCREEN2 : QUIZ SCREEN (Hidden by default)-->
+         <div id="quiz-screen" class="screen hidden">
+            <div class="quiz-header">
+                <span id="question-number">Question 1/10</span>
+                <div id="score-display">Score: 0</div>
+            </div>
+            
+            <h2 id="question-text">Question text goes here?</h2>
+            
+            <div id="answer-buttons" class="btn-grid">
+                <!-- Buttons will be created by JavaScript -->
+            </div>
+        </div>
+
+        <!-- SCREEN 3: Results Screen (Hidden by default) -->
+        <div id="result-screen" class="screen hidden">
+            <h1>Quiz Complete!</h1>
+            <p id="final-score">You scored 0 out of 10</p>
+            <button id="restart-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
